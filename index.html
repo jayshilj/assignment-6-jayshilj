@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+        <!-- <script src="https://kit.fontawesome.com/a81368914c.js"></script> -->
+        <title>Assignment 6 JavaScript</title>
+        <link href="dist/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    </head>
+    <body>
+        
+        
+        <h1><span class="styling">ToDo App</span></h1>
+      
+        <div id="list-container" class="container">
+            <!--Creating form to add details from UI-->
+            <form id="list-form">
+                <div class="text_block"><br>&nbsp;&nbsp;&nbsp;&nbsp;Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" required="required" id="title"> </div><br>
+                <div class="text_block"><br>Description:&nbsp;&nbsp;<input type="text" id="description"> </div><br>
+                <div class="text_block"><br>Due Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" placeholder="Duedate" id="duedate"> </div><br>
+                <div class="text_block"><br>&nbsp;&nbsp;&nbsp;&nbsp;Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" placeholder="Time" id="time"> </div><br>
+                <input type ="submit" class = "button" value ="Add To Do item">
+            </form>
+            <br>
+            <br>
+            <div class="table1">
+                <h2> Checklist of To Do App</h2>
+                <br>
+                <div id="dolist"></div>
+              </div>
+       </div>
+       <script src="js/main.js"></script>
+       <script>
+           //Code for detail and summary view
+        function detailFunc() {
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+    
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        }
+    
+      </script>
+      
+    </body>
+</html>
+</html>
+

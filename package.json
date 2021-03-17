@@ -1,0 +1,24 @@
+{
+  "name": "assignment-6-jayshilj",
+  "version": "1.0.0",
+  "description": "<br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/main.scss --output dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2021/assignment-6-jayshilj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2021/assignment-6-jayshilj/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2021/assignment-6-jayshilj#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {}
+}
